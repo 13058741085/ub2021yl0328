@@ -33,7 +33,7 @@ jobs:
           sleep 6h
   build2:
     if: always()
-      needs: build
+    needs: build
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -52,7 +52,7 @@ jobs:
           sleep 6h
   build3:
     if: always()
-      needs: [build, build2]
+    needs: [build, build2]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -71,7 +71,7 @@ jobs:
           sleep 6h
   build4:
     if: always()
-      needs: [build, build2, build3]
+    needs: [build, build2, build3]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -90,7 +90,7 @@ jobs:
           sleep 6h
   build5:
     if: always()
-      needs: [build, build2, build3, build4]
+    needs: [build, build2, build3, build4]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -109,7 +109,7 @@ jobs:
           sleep 6h
   build6:
     if: always()
-      needs: [build, build2, build3, build4, build5]
+    needs: [build, build2, build3, build4, build5]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -128,7 +128,7 @@ jobs:
           sleep 6h
   build7:
     if: always()
-      needs: [build, build2, build3, build4, build5, build6]
+    needs: [build, build2, build3, build4, build5, build6]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -147,7 +147,7 @@ jobs:
           sleep 6h
   build8:
     if: always()
-      needs: [build, build2, build3, build4, build5, build6, build7]
+    needs: [build, build2, build3, build4, build5, build6, build7]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -166,7 +166,7 @@ jobs:
           sleep 6h
   build9:
     if: always()
-      needs: [build, build2, build3, build4, build5, build6, build7, build8]
+    needs: [build, build2, build3, build4, build5, build6, build7, build8]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -185,7 +185,7 @@ jobs:
           sleep 6h
   build10:
     if: always()
-      needs: [build, build2, build3, build4, build5, build6, build7, build8, build9]
+    needs: [build, build2, build3, build4, build5, build6, build7, build8, build9]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -204,7 +204,7 @@ jobs:
           sleep 6h
   build11:
     if: always()
-      needs: [build, build2, build3, build4, build5, build6, build7, build8, build9, build10]
+    needs: [build, build2, build3, build4, build5, build6, build7, build8, build9, build10]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -223,7 +223,7 @@ jobs:
           sleep 6h
   build12:
     if: always()
-      needs: [build, build2, build3, build4, build5, build6, build7, build8, build9, build10, build11]
+    needs: [build, build2, build3, build4, build5, build6, build7, build8, build9, build10, build11]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
